@@ -1,6 +1,6 @@
 # Project 1
 
-## Please run the .py file from the coder in PsychoPy!
+## Please run the .py file from the coder in PsychoPy (version 3.2.4ish)!
 
 ## Introduction <br/>
 My experiment measures reaction time (RT) in a visual search task. Participants must search for a target in scene images. Critically, I am trying to see whether scene gist can be used to guide attention towards target locations and drive learning of the scene-target relationship. In order to demonstrate that scene gist truly plays a role in the observed effects, I will be comparing conditions based on preview type: intact, and phase-scrambled. Intact previews are identical to the search image (without the target). Phase-scrambled previews are search images that have been transformed using the Fast Fourier Transform, removing any gist information. Therefore, I expect search to be more efficient in intact preview trials, compared to in phase-scrambled trials, as shown by RT.
