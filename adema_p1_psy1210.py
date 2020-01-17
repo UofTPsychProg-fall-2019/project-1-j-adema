@@ -15,7 +15,7 @@ if dlg.OK == False:
     core.quit()
 expInfo['date'] = data.getDateStr()
 
-win = visual.Window(size=(1600,1068),fullscr=True, winType='pyglet', monitor='testMonitor', allowGUI=False,color='white', units='height')
+win = visual.Window(size=(1600,1068),fullscr=True, winType='pyglet', monitor='testMonitor', allowGUI=False,color=[0,0,0], units='height')
 win.recordFrameIntervals=True
 win.refreshThreshold = 1/60 + 0.004
 logging.console.setLevel(logging.WARNING)
@@ -52,7 +52,7 @@ instruction1 = visual.TextStim(win=win, name='instruct',
     '\n\n\n\nYour task is to find the target as quickly as possible.\nPress any key to continue.',
     font='Arial',
     pos=(0,0), height=0.07, wrapWidth=None, ori=0,
-    color='black', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 inst_k = visual.ImageStim(
@@ -85,7 +85,7 @@ instruction2 = visual.TextStim(win=win, name='instruct2',
     ' Press the "L" key if you see the lizard target.\nPress any key to continue.',
     font='Arial',
     pos=(0,0), height=0.07, wrapWidth=None, ori=0,
-    color='black', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 instruction2.draw()
@@ -98,7 +98,7 @@ instruction3 = visual.TextStim(win=win, name='instruct4',
     '\n\n Press any key to continue.',
     font='Arial',
     pos=(0,0), height=0.07, wrapWidth=None, ori=0,
-    color='black', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 instruction3.draw()
@@ -112,7 +112,7 @@ instruction4 = visual.TextStim(win=win, name='instruct3',
     '\n\n\n\n\n\nPress "K" or "L" to begin.',
     font='Arial',
     pos=(0,0), height=0.07, wrapWidth=None, ori=0,
-    color='black', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 inst_cross = visual.ShapeStim(
@@ -120,7 +120,7 @@ inst_cross = visual.ShapeStim(
     units = 'cm', size=(0.5, 0.5),
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor=[-1,-1,-1], lineColorSpace='rgb',
-    fillColor=[-1,-1,-1], fillColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 instruction4.draw()
 inst_cross.draw()
@@ -164,14 +164,14 @@ ready = visual.TextStim(win=win, name='text',
     text="Ready to start the next trial?",
     font='Arial',
     pos=(0, 0.2), height=0.1, wrapWidth=None, ori=0,
-    color='black', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-1.0)
 pause_text = visual.TextStim(win=win, name='pause_text',
     text="Take a moment's rest. When you're ready, put your index finger on 'K'. Put your middle finger on 'L'.\n\n\n\n\n\nPress 'K' or 'L' to resume.",
     font='Arial',
     pos=(0, 0), height=0.07, wrapWidth=None, ori=0,
-    color='black', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0)
 
@@ -270,7 +270,7 @@ finish_text = visual.TextStim(win=win, name='pause_text',
     text="Thank you for completing the study! Press any key to exit the experiment.",
     font='Arial',
     pos=(0, 0), height=0.07, wrapWidth=None, ori=0,
-    color='black', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0)
 finish_text.draw()
